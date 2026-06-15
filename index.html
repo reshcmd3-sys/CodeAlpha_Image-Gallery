@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <span class="hero__eyebrow">Visual Portfolio</span>
+      <h1>Modern Image Gallery</h1>
+      <p>Browse a curated collection with category filters, rich hover states, and a refined lightbox experience.</p>
+    </div>
+  </header>
+
+  <main class="gallery-page">
+    <section class="gallery-header">
+      <div>
+        <p class="section-label">Featured Collection</p>
+        <h2>Selected imagery for every project.</h2>
+      </div>
+      <p class="gallery-instruction">Tap any image to open the lightbox. Use the buttons below to filter the gallery.</p>
+    </section>
+
+    <section class="controls">
+      <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="city">City</button>
+        <button class="filter-btn" data-category="people">People</button>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <article class="gallery-item" data-category="nature">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1015/900/700" alt="Mountain lake">
+        </div>
+        <div class="gallery-item__meta">
+          <span>Nature</span>
+          <h3>Mountain Lake</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="city">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1011/900/700" alt="City street">
+        </div>
+        <div class="gallery-item__meta">
+          <span>City</span>
+          <h3>City Street</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="people">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1005/900/700" alt="Portrait of a person">
+        </div>
+        <div class="gallery-item__meta">
+          <span>People</span>
+          <h3>Portrait</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="nature">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1039/900/700" alt="Forest path">
+        </div>
+        <div class="gallery-item__meta">
+          <span>Nature</span>
+          <h3>Forest Path</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="city">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1016/900/700" alt="Modern skyline">
+        </div>
+        <div class="gallery-item__meta">
+          <span>City</span>
+          <h3>Skyline</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="people">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1027/900/700" alt="Smiling woman">
+        </div>
+        <div class="gallery-item__meta">
+          <span>People</span>
+          <h3>Smiling</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="nature">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1056/900/700" alt="Ocean cliffs">
+        </div>
+        <div class="gallery-item__meta">
+          <span>Nature</span>
+          <h3>Ocean Cliffs</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="city">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1043/900/700" alt="Urban rooftop view">
+        </div>
+        <div class="gallery-item__meta">
+          <span>City</span>
+          <h3>Rooftop View</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="people">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1021/900/700" alt="Young woman with natural light">
+        </div>
+        <div class="gallery-item__meta">
+          <span>People</span>
+          <h3>Natural Light</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="nature">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1084/900/700" alt="Dewy flowers close-up">
+        </div>
+        <div class="gallery-item__meta">
+          <span>Nature</span>
+          <h3>Dewy Flowers</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="city">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1050/900/700" alt="Night city lights">
+        </div>
+        <div class="gallery-item__meta">
+          <span>City</span>
+          <h3>Night Lights</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="people">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1035/900/700" alt="Man walking on street">
+        </div>
+        <div class="gallery-item__meta">
+          <span>People</span>
+          <h3>Street Portrait</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="nature">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1041/900/700" alt="Sunset over hills">
+        </div>
+        <div class="gallery-item__meta">
+          <span>Nature</span>
+          <h3>Sunset Hills</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="city">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1069/900/700" alt="Architectural details">
+        </div>
+        <div class="gallery-item__meta">
+          <span>City</span>
+          <h3>Architectural Detail</h3>
+        </div>
+      </article>
+
+      <article class="gallery-item" data-category="people">
+        <div class="gallery-item__media">
+          <img src="https://picsum.photos/id/1019/900/700" alt="Woman with headphones">
+        </div>
+        <div class="gallery-item__meta">
+          <span>People</span>
+          <h3>Headphones</h3>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox__panel">
+      <button class="lightbox__close" id="closeBtn" aria-label="Close lightbox">×</button>
+      <button class="lightbox__nav prev" id="prevBtn" aria-label="Previous image">‹</button>
+      <div class="lightbox__content">
+        <img class="lightbox__img" id="lightboxImg" src="" alt="Expanded gallery image">
+        <div class="lightbox__details">
+          <p class="lightbox__tag" id="lightboxCategory"></p>
+          <h3 class="lightbox__title" id="lightboxCaption"></h3>
+        </div>
+      </div>
+      <button class="lightbox__nav next" id="nextBtn" aria-label="Next image">›</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
